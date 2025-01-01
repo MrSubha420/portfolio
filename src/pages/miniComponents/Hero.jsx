@@ -36,7 +36,7 @@ const Hero = () => {
         Hey, I'm {user.fullName}
       </h1>
       <h1 className="text-tubeLight-effect overflow-x-hidden text-[1rem] 
-      sm:text-[1.25rem] md:text-[1.5rem] lg:text-[1.8rem] tracking-[15px]">
+      sm:text-[1.25rem] md:text-[1.5rem] lg:text-[1.8rem] tracking-[5px]">
         <Typewriter
           words={["FULLSTACK WEB DEVELOPER", "APP DEVELOPER", "RESEARCHER", "DATA ANALYST", "IoT SYSTEM CREATOR"]}
           loop={50}
