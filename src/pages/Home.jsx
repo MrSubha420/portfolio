@@ -33,13 +33,13 @@ const Home = () => {
 
       {/* Main content */}
       <article className="px-5 mt-10 sm:mt-14 md:mt-16 lg:mt-24 xl:mt-32 sm:mx-auto w-full max-w-[1050px] flex flex-col gap-14">
-        <Hero />
-        <Timeline />
-        <About />
-        <Skills />
-        <Portfolio />
-        <MyApps />
-        <Contact />
+      <div id="hero" className="mb-10"><Hero /></div>
+        <div id="timeline" className="mb-10"><Timeline /></div>
+        <div id="about" className="mb-10"><About /></div>
+        <div id="skills" className="mb-10"><Skills /></div>
+        <div id="portfolio" className="mb-10"><Portfolio /></div>
+        <div id="myapps" className="mb-10"><MyApps /></div>
+        <div id="contact" className="mb-10"><Contact /></div>
       </article>
 
       {/* ChartBot */}
