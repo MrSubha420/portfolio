@@ -31,7 +31,7 @@ const ChartBot = () => {
           <div className="flex items-center justify-between p-3 border-b border-green-700">
             <div className="flex items-center gap-2">
               <img src="/pihu.gif" alt="Bot Logo" className="w-12 h-12" />
-              <h3 className="text-lg font-semibold">HackerBot</h3>
+              <h3 className="text-lg font-semibold">PihuX</h3>
             </div>
             <button
               onClick={toggleChat}
