@@ -12,7 +12,7 @@ const Portfolio = () => {
   useEffect(() => {
     const getMyProjects = async () => {
       const { data } = await axios.get(
-        "https://portfolio-backend-production-bf5d.up.railway.app/api/v1/projrct/getall",
+        "https://portfolio-backend-dun-two.vercel.app/api/v1/projrct/getall",
         { withCredentials: true }
       );
       setProjects(data.projects);
