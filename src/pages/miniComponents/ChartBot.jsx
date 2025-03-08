@@ -10,39 +10,29 @@ const ChartBot = () => {
 
   return (
     <div className="fixed bottom-4 left-4 z-50">
-      {/* Chat Button */}
+      {/* Chat Button with Larger GIF */}
       {!isChatOpen && (
         <button
           onClick={toggleChat}
-          className="p-3 bg-green-600 text-black rounded-full shadow-lg flex items-center justify-center focus:outline-none hover:bg-green-500 animate-pulse"
+          className="focus:outline-none"
           aria-label="Open Chatbot"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-5 h-5"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"
-            />
-          </svg>
+          <img src="/pihu.gif" alt="ChatBot Logo" className="w-28 h-28" />
         </button>
       )}
 
       {/* Chat Section */}
       {isChatOpen && (
         <div
-          className="w-80 h-96 bg-black text-green-500 rounded-lg shadow-lg flex flex-col transition-all transform scale-100 animate-fade-in"
-          style={{ position: "fixed", bottom: "4rem", left: "1rem" }}
+          className="w-80 h-96 bg-black text-green-500 rounded-lg shadow-lg flex flex-col transition-all transform scale-100"
+          style={{ position: "fixed", bottom: "6rem", left: "1rem" }}
         >
-          {/* Header */}
+          {/* Header with Smaller GIF */}
           <div className="flex items-center justify-between p-3 border-b border-green-700">
-            <h3 className="text-lg font-semibold">HackerBot</h3>
+            <div className="flex items-center gap-2">
+              <img src="/pihu.gif" alt="Bot Logo" className="w-12 h-12" />
+              <h3 className="text-lg font-semibold">HackerBot</h3>
+            </div>
             <button
               onClick={toggleChat}
               className="text-green-400 hover:text-green-200"
@@ -68,4 +58,3 @@ const ChartBot = () => {
 };
 
 export default ChartBot;
-
